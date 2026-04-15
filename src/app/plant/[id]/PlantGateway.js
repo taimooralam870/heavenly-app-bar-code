@@ -24,7 +24,7 @@ export default function PlantGateway({ plant, children }) {
 
     // Simulate a secure decryption process for "Premium feel"
     setTimeout(() => {
-      if (inputKey === (plant.access_key || "1234")) {
+      if (inputKey.trim() === (plant.access_key || "1234")) {
         setAnimatingOut(true);
         sessionStorage.setItem(`plant_unlocked_${plant.id}`, "true");
         setTimeout(() => {

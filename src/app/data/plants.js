@@ -23,7 +23,7 @@ const unpackPlant = (p) => {
       unpacked.nickname = data.nickname;
       unpacked.gallery = data.gallery || [];
       unpacked.owner_image = data.owner_image;
-    }
+    } 
   } catch (e) { }
   return unpacked;
 };
