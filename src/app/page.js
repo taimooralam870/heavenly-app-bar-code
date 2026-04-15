@@ -36,19 +36,19 @@ export default async function Home() {
       </nav>
 
       {/* ── HERO SECTION ── */}
-      <section style={{ padding: "180px 0 120px", background: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80') center/cover no-repeat", position: "relative" }}>
+      <section className="hero-padding" style={{ padding: "180px 0 120px", background: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80') center/cover no-repeat", position: "relative" }}>
         <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "linear-gradient(to right, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.7) 100%)" }} />
         <div className="container" style={{ position: "relative", zIndex: 1, color: "#fff" }}>
            <div className="anim-fadeUp" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "8px 16px", background: "rgba(16,185,129,0.15)", color: "#10b981", borderRadius: "100px", fontSize: "13px", fontWeight: 800, marginBottom: "24px", backdropFilter: "blur(10px)" }}>
               <Star size={14} /> LUXURY INDOOR LIVING IN THE UAE
            </div>
-           <h1 className="font-display anim-fadeUp delay-1" style={{ fontSize: "clamp(48px, 8vw, 84px)", fontWeight: 900, lineHeight: 0.9, color: "#fff", marginBottom: "32px", maxWidth: "800px" }}>
+           <h1 className="font-display anim-fadeUp delay-1 hero-title" style={{ fontSize: "clamp(48px, 8vw, 84px)", fontWeight: 900, lineHeight: 0.9, color: "#fff", marginBottom: "32px", maxWidth: "800px" }}>
              Smart Greenery for Your <span style={{ color: "#10b981" }}>Desert Oasis</span>
            </h1>
            <p className="anim-fadeUp delay-2" style={{ fontSize: "18px", color: "#cbd5e1", maxWidth: "600px", marginBottom: "40px", lineHeight: 1.6 }}>
              Elevate your Dubai apartment or villa with premium indoor plants. Scan your luxurious QR tag to ensure your flora thrives in UAE's AC environments.
            </p>
-           <div className="anim-fadeUp delay-3" style={{ display: "flex", gap: "16px" }}>
+           <div className="anim-fadeUp delay-3 mobile-stack" style={{ display: "flex", gap: "16px" }}>
               <a href="#explore" className="btn-primary" style={{ padding: "18px 40px", fontSize: "16px", background: "#10b981", color: "#fff" }}>Explore Collection <ArrowRight size={18} /></a>
            </div>
         </div>
@@ -61,7 +61,7 @@ export default async function Home() {
                <h2 className="font-display" style={{ fontSize: "42px", fontWeight: 800 }}>Seamless Digital Experience</h2>
                <p style={{ color: "#64748b" }}>Your plant's life story in three simple steps.</p>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "40px" }}>
+            <div className="feature-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "40px" }}>
                <div style={{ textAlign: "center" }}>
                   <div style={{ width: "80px", height: "80px", background: "#f0fdf4", color: "#10b981", borderRadius: "24px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px" }}><Maximize size={32} /></div>
                   <h3 style={{ fontSize: "20px", fontWeight: 800, marginBottom: "12px" }}>1. Scan the Pot</h3>
@@ -85,7 +85,7 @@ export default async function Home() {
       <section style={{ padding: "60px 0", background: "#0f172a", color: "#fff", textAlign: "center" }}>
          <div className="container">
             <h4 style={{ fontSize: "14px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "2px", color: "#94a3b8", marginBottom: "32px" }}>Trusted by UAE Plant Lovers & Elite Nurseries</h4>
-            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "60px", opacity: 0.6 }}>
+            <div className="mobile-stack" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "60px", opacity: 0.6 }}>
                {/* Mock logos text */}
                <div style={{ fontSize: "24px", fontWeight: 900, fontFamily: "serif" }}>Dubai Marina Flora</div>
                <div style={{ fontSize: "24px", fontWeight: 900, fontFamily: "serif" }}>Palm Jumeirah Greens</div>
@@ -97,7 +97,7 @@ export default async function Home() {
       {/* ── PUBLIC EXPLORE GRID ── */}
       <section id="explore" style={{ padding: "100px 0", background: "#f8fafc" }}>
         <div className="container">
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "48px" }}>
+          <div className="mobile-stack" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "48px" }}>
              <div>
                 <h2 className="font-display" style={{ fontSize: "36px", fontWeight: 800 }}>Desert Survivors</h2>
                 <p style={{ color: "#64748b" }}>Premium indoor varieties perfectly suited for UAE AC environments.</p>
@@ -105,7 +105,7 @@ export default async function Home() {
              <Link href="/admin" className="btn-outline">Register Your Premium Plant</Link>
           </div>
           
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "32px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(Min(100%, 300px), 1fr))", gap: "32px" }}>
             {plants.slice(0, 6).map((plant) => (
               <Link key={plant.id} href={`/specimen/${plant.id}`} style={{ textDecoration: "none" }}>
                 <div style={premiumPlantCard}>
@@ -130,9 +130,9 @@ export default async function Home() {
       </section>
 
       {/* ── CTA SECTION ── */}
-      <section style={ctaSection}>
+      <section style={ctaSection} className="mobile-cta">
          <div className="container" style={{ position: "relative", zIndex: 1 }}>
-            <h2 className="font-display" style={{ fontSize: "48px", fontWeight: 900, marginBottom: "24px" }}>Ready to Digitalize your Flora?</h2>
+            <h2 className="font-display hero-title" style={{ fontSize: "48px", fontWeight: 900, marginBottom: "24px" }}>Ready to Digitalize your Flora?</h2>
             <p style={{ fontSize: "18px", opacity: 0.9, marginBottom: "40px" }}>Join the elite botanists tracking their premium collection across the Emirates.</p>
             <Link href="/admin" className="btn-primary" style={{ background: "#C8973E", color: "#1A3C34" }}>Start My Registry Now</Link>
          </div>

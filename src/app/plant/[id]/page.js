@@ -98,16 +98,16 @@ export default async function PlantPage({ params }) {
         </nav>
   
         {/* ── DASHBOARD HEADER ── */}
-        <section style={{ padding: "120px 0 60px", background: "#fff", borderBottom: "1px solid #f1f5f9" }}>
+        <section className="hero-padding" style={{ padding: "120px 0 60px", background: "#fff", borderBottom: "1px solid #f1f5f9" }}>
           <div className="container">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+            <div className="mobile-grid-1" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
               <div className="anim-fadeUp">
                 <div style={{ display: "flex", gap: "10px", marginBottom: "24px" }}>
                    <span style={verifiedBadge}>
                       <ShieldCheck size={14} /> Verified Digital Companion
                    </span>
                 </div>
-                <h1 className="font-display" style={{ fontSize: "56px", fontWeight: 900, marginBottom: "8px", lineHeight: 1.1 }}>
+                <h1 className="font-display plant-hero-title" style={{ fontSize: "56px", fontWeight: 900, marginBottom: "8px", lineHeight: 1.1 }}>
                   Meet your <br/> <span style={{ color: BRAND_ACCENT }}>{plant.nickname || plant.name}</span>
                 </h1>
                 
@@ -127,12 +127,12 @@ export default async function PlantPage({ params }) {
               <div className="anim-leafGrow" style={{ position: "relative" }}>
                  <div style={imagePreviewFrame}>
                     {plant.image ? (
-                      <img src={plant.image} style={{ width: "100%", height: "450px", objectFit: "cover", borderRadius: "12px" }} />
+                      <img src={plant.image} style={{ width: "100%", maxHeight: "450px", objectFit: "cover", borderRadius: "12px" }} />
                     ) : (
                       <div style={{ height: "450px", display: "flex", alignItems: "center", justifyContent: "center", background: "#f1f5f9", borderRadius: "12px", fontSize: "120px" }}>🪴</div>
                     )}
                  </div>
-                 <div style={floatingMeta}>
+                 <div style={floatingMeta} className="hide-mobile">
                     <MapPin size={18} color={BRAND_ACCENT} />
                     <span>Thriving in <strong>{plant.location}</strong></span>
                  </div>
@@ -190,7 +190,7 @@ export default async function PlantPage({ params }) {
 
         {/* ── COLLECTOR SERVICES & CONSOLE ── */}
         <div className="container" style={{ padding: "60px 24px 100px" }}>
-           <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", gap: "60px" }}>
+           <div className="mobile-grid-1" style={{ display: "grid", gridTemplateColumns: "1fr 380px", gap: "60px" }}>
               
               <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
                  

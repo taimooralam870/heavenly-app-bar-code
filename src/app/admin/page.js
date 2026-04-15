@@ -88,7 +88,7 @@ export default function AdminDashboard() {
           canvas.height = img.height * scale;
           const ctx = canvas.getContext("2d");
           ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          const dataUrl = canvas.toDataURL("image/jpeg", 0.7); // Highly optimized!
+          const dataUrl = canvas.toDataURL("image/jpeg", 0.7); 
           setFormData(prev => ({ ...prev, photoBase64: dataUrl }));
         };
         img.src = event.target.result;
@@ -165,10 +165,12 @@ export default function AdminDashboard() {
     p.owner_name?.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   if (!isAuthenticated) {
     return (
-      <div style={{ minHeight: "100vh", background: "#f3f4f6", display: "flex", alignItems: "center", justifyContent: "center" }}>
-         <div className="anim-fadeUp" style={{ width: "100%", maxWidth: "400px", background: "#fff", padding: "48px", borderRadius: "24px", boxShadow: "0 20px 50px rgba(0,0,0,0.05)", textAlign: "center" }}>
+      <div style={{ minHeight: "100vh", background: "#f3f4f6", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
+         <div className="anim-fadeUp" style={{ width: "100%", maxWidth: "400px", background: "#fff", padding: "48px 32px", borderRadius: "24px", boxShadow: "0 20px 50px rgba(0,0,0,0.05)", textAlign: "center" }}>
             <div style={{ width: "64px", height: "64px", background: "#059669", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px" }}>
                <Lock color="#fff" size={32} />
             </div>
@@ -184,25 +186,39 @@ export default function AdminDashboard() {
   }
 
   return (
-    <div style={{ minHeight: "100vh", background: "#f8fafc", display: "flex", color: "#1e293b" }}>
+    <div style={{ minHeight: "100vh", background: "#f8fafc", display: "flex", color: "#1e293b", position: "relative" }}>
       
+      {/* ── MOBILE NAVBAR ── */}
+      <div style={{ position: "fixed", top: 0, left: 0, right: 0, height: "64px", background: "#fff", borderBottom: "1px solid #e2e8f0", zIndex: 50, display: "flex", alignItems: "center", padding: "0 20px" }} className="show-mobile-flex">
+         <button onClick={() => setIsSidebarOpen(true)} style={{ background: "none", border: "none", padding: "8px", cursor: "pointer" }}>
+            <Menu size={24} />
+         </button>
+         <div style={{ flex: 1, textAlign: "center", fontWeight: 900, fontSize: "16px", letterSpacing: "-0.5px" }}>Heavenly<span style={{color: '#10b981'}}>Plants</span> Admin</div>
+      </div>
+
+      {/* ── MOBILE OVERLAY ── */}
+      {isSidebarOpen && <div className="mobile-drawer-overlay" onClick={() => setIsSidebarOpen(false)} />}
+
       {/* ── CLEAN SIDEBAR ── */}
-      <aside style={{ width: "260px", background: "#fff", borderRight: "1px solid #e2e8f0", position: "fixed", height: "100vh", padding: "32px 20px", display: "flex", flexDirection: "column", zIndex: 10 }}>
-         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "48px", paddingLeft: "12px" }}>
-            <div style={{ width: "32px", height: "32px", background: "#10b981", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-               <Leaf color="#fff" size={18} />
+      <aside className={`admin-sidebar ${isSidebarOpen ? 'open' : ''}`} style={{ width: "260px", background: "#fff", borderRight: "1px solid #e2e8f0", position: "fixed", height: "100vh", padding: "32px 20px", display: "flex", flexDirection: "column", zIndex: 100 }}>
+         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "48px", paddingLeft: "12px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+               <div style={{ width: "32px", height: "32px", background: "#10b981", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <Leaf color="#fff" size={18} />
+               </div>
+               <span style={{ fontWeight: 800, fontSize: "18px", color: "#111827", letterSpacing: "-0.5px" }}>HeavenlyPlants</span>
             </div>
-            <span style={{ fontWeight: 800, fontSize: "18px", color: "#111827", letterSpacing: "-0.5px" }}>HeavenlyPlants <span style={{color: '#059669'}}>ADMIN</span></span>
+            <button className="show-mobile-flex" onClick={() => setIsSidebarOpen(false)} style={{ background: "none", border: "none" }}><X size={20}/></button>
          </div>
 
          <nav style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-            <button onClick={() => setActiveTab("inventory")} style={{ ...sideNavBtn, ...(activeTab === "inventory" ? sideNavActive : {}) }}>
+            <button onClick={() => {setActiveTab("inventory"); setIsSidebarOpen(false);}} style={{ ...sideNavBtn, ...(activeTab === "inventory" ? sideNavActive : {}) }}>
                <LayoutDashboard size={18} /> Inventory
             </button>
-            <button onClick={() => setActiveTab("logs")} style={{ ...sideNavBtn, ...(activeTab === "logs" ? sideNavActive : {}) }}>
+            <button onClick={() => {setActiveTab("logs"); setIsSidebarOpen(false);}} style={{ ...sideNavBtn, ...(activeTab === "logs" ? sideNavActive : {}) }}>
                <Activity size={18} /> System Logs
             </button>
-            <button onClick={() => setActiveTab("users")} style={{ ...sideNavBtn, ...(activeTab === "users" ? sideNavActive : {}) }}>
+            <button onClick={() => {setActiveTab("users"); setIsSidebarOpen(false);}} style={{ ...sideNavBtn, ...(activeTab === "users" ? sideNavActive : {}) }}>
                <Users size={18} /> User Access
             </button>
          </nav>
@@ -220,31 +236,31 @@ export default function AdminDashboard() {
       </aside>
 
       {/* ── MAIN CONTENT ── */}
-      <main style={{ flex: 1, marginLeft: "260px", padding: "48px 60px" }}>
+      <main className="admin-main" style={{ flex: 1, marginLeft: "260px", padding: "48px 60px", marginTop: "64px" }}>
         
         {activeTab === "inventory" && (
            <div className="anim-fadeIn">
-              <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "48px" }}>
+              <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "48px" }} className="admin-header">
                  <div>
                     <h1 style={{ fontSize: "32px", fontWeight: 800, color: "#111827", marginBottom: "4px" }}>{editingId ? "Edit Record" : "Plant Inventory"}</h1>
                     <p style={{ color: "#64748b", fontSize: "15px" }}>Manage your collection of {plants.length} records.</p>
                  </div>
-                 <div style={{ position: "relative" }}>
+                 <div style={{ position: "relative" }} className="search-input">
                     <Search size={18} style={{ position: "absolute", left: "16px", top: "14px", color: "#94a3b8" }} />
-                    <input type="text" placeholder="Search plants or owners..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} style={searchBar} />
+                    <input type="text" placeholder="Search plants or owners..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} style={searchBar} className="search-input" />
                  </div>
               </header>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "40px" }}>
+              <div className="admin-grid" style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "40px" }}>
                  
                  {/* FORM BODY */}
                  <div style={{ background: "#fff", borderRadius: "24px", padding: "40px", boxShadow: "0 4px 20px rgba(0,0,0,0.02)", border: "1px solid #f1f5f9" }}>
                     <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-                       <div className="form-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+                       <div className="form-row mobile-grid-1" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
                           <div><label style={clabel}>Plant Name</label><input name="name" value={formData.name} onChange={handleChange} required style={cleanInput} placeholder="Aloe Vera" /></div>
                           <div><label style={clabel}>Species</label><input name="species" value={formData.species} onChange={handleChange} style={cleanInput} placeholder="Succulent" /></div>
                        </div>
-                       <div className="form-row" style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr", gap: "16px" }}>
+                       <div className="form-row mobile-grid-1" style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr", gap: "16px" }}>
                           <div><label style={clabel}>Owner Name</label><input name="owner_name" value={formData.owner_name} onChange={handleChange} style={cleanInput} placeholder="Full Name" /></div>
                           <div><label style={clabel}>Plant Access Key (QR Secret)</label><input name="access_key" value={formData.access_key} onChange={handleChange} style={{...cleanInput, fontWeight: 800, color: '#059669', background: '#f0fdf4'}} placeholder="e.g. 5678" /></div>
                        </div>
@@ -315,7 +331,6 @@ export default function AdminDashboard() {
                        </div>
                     ))}
                  </div>
-
               </div>
            </div>
         )}
@@ -323,8 +338,9 @@ export default function AdminDashboard() {
         {activeTab === "logs" && (
            <div className="anim-fadeIn">
               <h1 style={{ fontSize: "32px", fontWeight: 800, marginBottom: "32px" }}>Operation Logs</h1>
-              <div style={{ background: "#fff", borderRadius: "20px", overflow: "hidden", border: "1px solid #e2e8f0" }}>
-                 <table style={{ width: "100%", borderCollapse: "collapse" }}>
+              <div className="responsive-table">
+                <div style={{ background: "#fff", borderRadius: "20px", overflow: "hidden", border: "1px solid #e2e8f0", minWidth: "600px" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse" }}>
                     <thead style={{ background: "#f8fafc", textAlign: "left" }}>
                        <tr>
                           <th style={clTh}>ID</th>
@@ -345,14 +361,15 @@ export default function AdminDashboard() {
                           </tr>
                        ))}
                     </tbody>
-                 </table>
+                  </table>
+                </div>
               </div>
            </div>
         )}
 
         {activeTab === "users" && (
            <div className="anim-fadeIn">
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "40px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "40px" }} className="admin-header">
                  <h1 style={{ fontSize: "32px", fontWeight: 800 }}>User Management</h1>
                  <button className="btn-primary" style={{ background: "#111827", borderRadius: "10px" }}><UserPlus size={18}/> Invite Staff</button>
               </div>
