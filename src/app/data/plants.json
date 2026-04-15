@@ -1,0 +1,556 @@
+[
+  {
+    "id": "monstera-01",
+    "name": "Monstera Deliciosa",
+    "emoji": "🌿",
+    "tagline": "The Swiss Cheese Plant",
+    "description": "Monstera Deliciosa is a stunning tropical plant known for its iconic split leaves. Native to the rainforests of Central America, it thrives in indirect bright light and brings a lush, exotic feel to any room.",
+    "species": "Monstera deliciosa",
+    "origin": "Central America",
+    "acquired": "January 15, 2024",
+    "location": "Living Room – East Window",
+    "color": "#2d6a4f",
+    "bgGradient": "linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #52b788 100%)",
+    "caretaker": {
+      "name": "Sara Khan",
+      "role": "Primary Caretaker",
+      "since": "January 2024",
+      "avatar": "SK",
+      "contact": "sara.khan@email.com",
+      "note": "Passionate about tropical houseplants. Waters every 7 days."
+    },
+    "careInstructions": [
+      {
+        "icon": "💧",
+        "label": "Watering",
+        "detail": "Every 7-10 days. Let top 2 inches of soil dry out between waterings."
+      },
+      {
+        "icon": "☀️",
+        "label": "Light",
+        "detail": "Bright indirect light. Avoid direct harsh sunlight to prevent leaf burn."
+      },
+      {
+        "icon": "🌡️",
+        "label": "Temperature",
+        "detail": "65–85°F (18–30°C). Keep away from cold drafts and AC vents."
+      },
+      {
+        "icon": "💨",
+        "label": "Humidity",
+        "detail": "Prefers 60%+ humidity. Mist leaves weekly or use a pebble tray."
+      },
+      {
+        "icon": "🪴",
+        "label": "Soil",
+        "detail": "Well-draining potting mix with perlite. Repot every 1-2 years."
+      },
+      {
+        "icon": "✂️",
+        "label": "Pruning",
+        "detail": "Remove yellow or damaged leaves at the base to encourage growth."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "Jan 15, 2024",
+        "event": "Acquired from GreenThumb Nursery",
+        "type": "acquired",
+        "detail": "Brought home as a 2-leaf cutting, 8 inches tall."
+      },
+      {
+        "date": "Feb 3, 2024",
+        "event": "First new leaf unfurled",
+        "type": "growth",
+        "detail": "First fenestrated leaf appeared — a sign of happy growth!"
+      },
+      {
+        "date": "Mar 10, 2024",
+        "event": "Repotted to 10-inch pot",
+        "type": "care",
+        "detail": "Roots were circling the pot. Moved to a larger terracotta pot."
+      },
+      {
+        "date": "Apr 22, 2024",
+        "event": "Treated for spider mites",
+        "type": "health",
+        "detail": "Noticed webbing on leaves. Treated with neem oil spray x3."
+      },
+      {
+        "date": "Jun 1, 2024",
+        "event": "Moved to new location",
+        "type": "move",
+        "detail": "Shifted near east window for better morning light."
+      },
+      {
+        "date": "Sep 14, 2024",
+        "event": "Ownership transferred",
+        "type": "transfer",
+        "detail": "Plant transferred to Sara Khan after previous owner relocated."
+      },
+      {
+        "date": "Jan 15, 2025",
+        "event": "1 Year Anniversary 🎉",
+        "type": "milestone",
+        "detail": "Plant is now 3 feet tall with 12 beautiful leaves!"
+      }
+    ],
+    "nurseryDays": [
+      {
+        "day": 1,
+        "note": "Cutting planted in nursery soil",
+        "height": "8 in"
+      },
+      {
+        "day": 30,
+        "note": "Roots established, first new growth",
+        "height": "10 in"
+      },
+      {
+        "day": 60,
+        "note": "Leaves multiplied, thriving",
+        "height": "14 in"
+      },
+      {
+        "day": 90,
+        "note": "Ready for sale / gifting",
+        "height": "18 in"
+      }
+    ],
+    "ownershipHistory": [
+      {
+        "owner": "GreenThumb Nursery",
+        "period": "Oct 2023 – Jan 2024",
+        "role": "Grower"
+      },
+      {
+        "owner": "Ali Raza",
+        "period": "Jan 2024 – Sep 2024",
+        "role": "Owner"
+      },
+      {
+        "owner": "Sara Khan",
+        "period": "Sep 2024 – Present",
+        "role": "Current Owner"
+      }
+    ]
+  },
+  {
+    "id": "snake-02",
+    "name": "Snake Plant",
+    "emoji": "🌱",
+    "tagline": "The Indestructible Air Purifier",
+    "description": "Sansevieria Trifasciata, commonly known as the Snake Plant or Mother-in-Law's Tongue, is one of the most resilient houseplants. It thrives on neglect and is NASA-certified as an excellent air purifier.",
+    "species": "Sansevieria trifasciata",
+    "origin": "West Africa",
+    "acquired": "March 20, 2024",
+    "location": "Bedroom – North Corner",
+    "color": "#386641",
+    "bgGradient": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #386641 100%)",
+    "caretaker": {
+      "name": "Ahmed Malik",
+      "role": "Primary Caretaker",
+      "since": "March 2024",
+      "avatar": "AM",
+      "contact": "ahmed.malik@email.com",
+      "note": "Loves low-maintenance plants. Waters sparingly, once every 2–3 weeks."
+    },
+    "careInstructions": [
+      {
+        "icon": "💧",
+        "label": "Watering",
+        "detail": "Every 2-3 weeks in summer, monthly in winter. Overwatering is the main killer."
+      },
+      {
+        "icon": "☀️",
+        "label": "Light",
+        "detail": "Tolerates low light but thrives in indirect bright light. Very adaptable."
+      },
+      {
+        "icon": "🌡️",
+        "label": "Temperature",
+        "detail": "60–80°F (15–27°C). Sensitive to frost; never let it freeze."
+      },
+      {
+        "icon": "💨",
+        "label": "Humidity",
+        "detail": "Tolerates dry air well. No special humidity requirements."
+      },
+      {
+        "icon": "🪴",
+        "label": "Soil",
+        "detail": "Use sandy, well-draining cactus soil. Drainage holes are essential."
+      },
+      {
+        "icon": "✂️",
+        "label": "Pruning",
+        "detail": "Trim brown leaf tips with clean scissors. Remove dead leaves from base."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "Mar 20, 2024",
+        "event": "Purchased from City Nursery",
+        "type": "acquired",
+        "detail": "Bought as a mature plant, already 2 feet tall."
+      },
+      {
+        "date": "Apr 5, 2024",
+        "event": "Acclimated to bedroom corner",
+        "type": "move",
+        "detail": "Took 2 weeks to adjust to the low-light corner."
+      },
+      {
+        "date": "Jun 15, 2024",
+        "event": "New pup sprouted",
+        "type": "growth",
+        "detail": "A baby pup appeared at the base — propagation potential!"
+      },
+      {
+        "date": "Aug 30, 2024",
+        "event": "Pup separated and potted",
+        "type": "care",
+        "detail": "Separated the pup into its own 4-inch pot."
+      },
+      {
+        "date": "Nov 10, 2024",
+        "event": "Winter care mode",
+        "type": "care",
+        "detail": "Reduced watering to once a month. Plant is resting."
+      }
+    ],
+    "nurseryDays": [
+      {
+        "day": 1,
+        "note": "Division planted in sandy soil",
+        "height": "12 in"
+      },
+      {
+        "day": 45,
+        "note": "Roots well-established",
+        "height": "16 in"
+      },
+      {
+        "day": 90,
+        "note": "Full, upright growth",
+        "height": "22 in"
+      },
+      {
+        "day": 120,
+        "note": "Mature and ready for home",
+        "height": "26 in"
+      }
+    ],
+    "ownershipHistory": [
+      {
+        "owner": "City Nursery",
+        "period": "Dec 2023 – Mar 2024",
+        "role": "Grower"
+      },
+      {
+        "owner": "Ahmed Malik",
+        "period": "Mar 2024 – Present",
+        "role": "Current Owner"
+      }
+    ]
+  },
+  {
+    "id": "fiddle-03",
+    "name": "Fiddle Leaf Fig",
+    "emoji": "🍃",
+    "tagline": "The Drama Queen of Houseplants",
+    "description": "Ficus Lyrata, the Fiddle Leaf Fig, is the statement plant of modern interiors. With its large, lush, violin-shaped leaves, it's Instagram-famous — but demands consistent care and the perfect spot.",
+    "species": "Ficus lyrata",
+    "origin": "Western Africa",
+    "acquired": "February 10, 2024",
+    "location": "Study – South Window",
+    "color": "#606c38",
+    "bgGradient": "linear-gradient(135deg, #283618 0%, #606c38 50%, #dda15e 100%)",
+    "caretaker": {
+      "name": "Zara Ahmed",
+      "role": "Primary Caretaker",
+      "since": "February 2024",
+      "avatar": "ZA",
+      "contact": "zara.ahmed@email.com",
+      "note": "Interior design enthusiast. Dedicated to keeping this diva happy!"
+    },
+    "careInstructions": [
+      {
+        "icon": "💧",
+        "label": "Watering",
+        "detail": "Every 7 days when top inch of soil is dry. Consistency is key — no dramatic changes."
+      },
+      {
+        "icon": "☀️",
+        "label": "Light",
+        "detail": "Needs bright, consistent indirect light. Do NOT move it — it hates change."
+      },
+      {
+        "icon": "🌡️",
+        "label": "Temperature",
+        "detail": "60–80°F (15–27°C). Keep away from vents, doors, and cold windows."
+      },
+      {
+        "icon": "💨",
+        "label": "Humidity",
+        "detail": "50–60% humidity. Use a humidifier in dry seasons."
+      },
+      {
+        "icon": "🪴",
+        "label": "Soil",
+        "detail": "Rich, well-draining loamy soil. Fertilize monthly in spring/summer."
+      },
+      {
+        "icon": "✂️",
+        "label": "Pruning",
+        "detail": "Prune in spring to control height. Wipe leaves with damp cloth monthly."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "Feb 10, 2024",
+        "event": "Purchased from Bloom & Co.",
+        "type": "acquired",
+        "detail": "Arrived as a 4-foot tree in a woven basket."
+      },
+      {
+        "date": "Feb 25, 2024",
+        "event": "Leaf drop scare",
+        "type": "health",
+        "detail": "Dropped 3 leaves after being moved. Normal acclimation stress."
+      },
+      {
+        "date": "Mar 20, 2024",
+        "event": "Found its perfect spot",
+        "type": "move",
+        "detail": "Settled near south window. No more moving!"
+      },
+      {
+        "date": "May 5, 2024",
+        "event": "New growth flush",
+        "type": "growth",
+        "detail": "5 new bright green leaves appeared at the top."
+      },
+      {
+        "date": "Jul 18, 2024",
+        "event": "Summer fertilization started",
+        "type": "care",
+        "detail": "Began monthly liquid fertilizer routine."
+      },
+      {
+        "date": "Dec 1, 2024",
+        "event": "Winter rest period",
+        "type": "care",
+        "detail": "Stopped fertilizing. Reduced watering frequency."
+      }
+    ],
+    "nurseryDays": [
+      {
+        "day": 1,
+        "note": "Seedling in nursery greenhouse",
+        "height": "6 in"
+      },
+      {
+        "day": 60,
+        "note": "Growing steadily in controlled environment",
+        "height": "18 in"
+      },
+      {
+        "day": 180,
+        "note": "Branching, becoming tree-like",
+        "height": "36 in"
+      },
+      {
+        "day": 270,
+        "note": "Ready for retail — statement piece",
+        "height": "48 in"
+      }
+    ],
+    "ownershipHistory": [
+      {
+        "owner": "Bloom & Co. Nursery",
+        "period": "Jun 2023 – Feb 2024",
+        "role": "Grower"
+      },
+      {
+        "owner": "Zara Ahmed",
+        "period": "Feb 2024 – Present",
+        "role": "Current Owner"
+      }
+    ]
+  },
+  {
+    "id": "pothos-04",
+    "name": "Golden Pothos",
+    "emoji": "🌾",
+    "tagline": "The Beginner's Best Friend",
+    "description": "Epipremnum Aureum, or Golden Pothos, is the perfect starter plant. Trail it from a shelf, hang it in a basket, or let it climb a moss pole — it adapts to almost any condition and forgives beginner mistakes.",
+    "species": "Epipremnum aureum",
+    "origin": "French Polynesia",
+    "acquired": "April 5, 2024",
+    "location": "Kitchen – Window Shelf",
+    "color": "#4a7c59",
+    "bgGradient": "linear-gradient(135deg, #2c3e50 0%, #4a7c59 50%, #f9c74f 100%)",
+    "caretaker": {
+      "name": "Hassan Noor",
+      "role": "Primary Caretaker",
+      "since": "April 2024",
+      "avatar": "HN",
+      "contact": "hassan.noor@email.com",
+      "note": "First-time plant parent. Learning as he goes — pothos is very forgiving!"
+    },
+    "careInstructions": [
+      {
+        "icon": "💧",
+        "label": "Watering",
+        "detail": "Every 7-10 days. Allow soil to dry completely between waterings."
+      },
+      {
+        "icon": "☀️",
+        "label": "Light",
+        "detail": "Tolerates low light but golden variegation fades. Bright indirect light is ideal."
+      },
+      {
+        "icon": "🌡️",
+        "label": "Temperature",
+        "detail": "65–85°F (18–30°C). Very adaptable — one of the toughest houseplants."
+      },
+      {
+        "icon": "💨",
+        "label": "Humidity",
+        "detail": "Not picky. Thrives in normal household humidity (40–60%)."
+      },
+      {
+        "icon": "🪴",
+        "label": "Soil",
+        "detail": "Regular potting mix works fine. Can even grow in just water!"
+      },
+      {
+        "icon": "✂️",
+        "label": "Pruning",
+        "detail": "Trim long vines to encourage bushiness. Propagate cuttings in water easily."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "Apr 5, 2024",
+        "event": "Gifted by a friend",
+        "type": "acquired",
+        "detail": "Received as a water-propagated cutting — already rooted!"
+      },
+      {
+        "date": "Apr 20, 2024",
+        "event": "Potted in soil",
+        "type": "care",
+        "detail": "Transitioned from water to a 6-inch pot with potting mix."
+      },
+      {
+        "date": "Jun 8, 2024",
+        "event": "Vines reached 2 feet",
+        "type": "growth",
+        "detail": "Rapid trailing growth — placed on kitchen shelf to cascade."
+      },
+      {
+        "date": "Aug 15, 2024",
+        "event": "Propagated 3 new cuttings",
+        "type": "growth",
+        "detail": "Created 3 new baby plants to share with neighbors."
+      },
+      {
+        "date": "Oct 30, 2024",
+        "event": "Vines now 4 feet long!",
+        "type": "milestone",
+        "detail": "Incredible growth! A true kitchen centerpiece now."
+      }
+    ],
+    "nurseryDays": [
+      {
+        "day": 1,
+        "note": "Cutting in water propagation",
+        "height": "4 in"
+      },
+      {
+        "day": 14,
+        "note": "Roots visible in water",
+        "height": "5 in"
+      },
+      {
+        "day": 30,
+        "note": "Potted in soil, adapting",
+        "height": "7 in"
+      },
+      {
+        "day": 60,
+        "note": "Vines trailing, thriving",
+        "height": "18 in vine"
+      }
+    ],
+    "ownershipHistory": [
+      {
+        "owner": "Fatima Zahra (Friend)",
+        "period": "Mar 2024",
+        "role": "Propagator"
+      },
+      {
+        "owner": "Hassan Noor",
+        "period": "Apr 2024 – Present",
+        "role": "Current Owner"
+      }
+    ]
+  },
+  {
+    "name": "money plant",
+    "emoji": "🪴",
+    "tagline": "afadsf",
+    "description": "afasdfasdf",
+    "species": "asfasdf",
+    "origin": "asfdasdfasdf",
+    "acquired": "April 14, 2026",
+    "location": "Living Room",
+    "color": "#2d6a4f",
+    "bgGradient": "linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #52b788 100%)",
+    "caretaker": {
+      "name": "Admin",
+      "role": "Primary Caretaker",
+      "since": "April 2026",
+      "avatar": "AD",
+      "contact": "admin@plantlife.app",
+      "note": "Newly added from Admin panel."
+    },
+    "careInstructions": [
+      {
+        "icon": "💧",
+        "label": "Watering",
+        "detail": "Check top 2 inches of soil before watering."
+      },
+      {
+        "icon": "☀️",
+        "label": "Light",
+        "detail": "Bright indirect light is best for most indoor plants."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "Apr 14, 2026",
+        "event": "Added to PlantLife System",
+        "type": "acquired",
+        "detail": "Plant profile created in the system."
+      }
+    ],
+    "nurseryDays": [
+      {
+        "day": 1,
+        "note": "Initial logged record",
+        "height": "Unknown"
+      }
+    ],
+    "ownershipHistory": [
+      {
+        "owner": "Admin",
+        "period": "Present",
+        "role": "Current Owner"
+      }
+    ],
+    "id": "money-plant-8971"
+  }
+]
