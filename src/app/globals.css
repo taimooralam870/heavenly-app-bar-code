@@ -3,92 +3,113 @@
 
 /* ══════════════════════════════════════════════
    LIGHT MODE — Biophilic "Nature-Tech" Palette
-   ══════════════════════════════════════════════ */
+══════════════════════════════════════════════ */
 :root {
   /* Backgrounds */
-  --bg:          #F9F9F7;          /* warm off-white */
-  --bg-card:     #FFFFFF;
-  --bg-soft:     #F3F2EE;          /* subtle cream tint */
-  --bg-inset:    #EFF0EA;
+  --bg: #F9F9F7;
+  /* warm off-white */
+  --bg-card: #FFFFFF;
+  --bg-soft: #F3F2EE;
+  /* subtle cream tint */
+  --bg-inset: #EFF0EA;
 
   /* Forest greens */
-  --green-deep:  #2D5A27;          /* primary */
-  --green-mid:   #3A7334;
-  --green-sage:  #7BA05B;          /* accent / CTA */
+  --green-deep: #2D5A27;
+  /* primary */
+  --green-mid: #3A7334;
+  --green-sage: #7BA05B;
+  /* accent / CTA */
   --green-light: #BDDB9B;
-  --green-pale:  #EAF5DD;
+  --green-pale: #EAF5DD;
 
   /* Earthy tones */
-  --terra:       #C4714A;          /* terracotta */
+  --terra: #C4714A;
+  /* terracotta */
   --terra-light: #F0C9B3;
-  --terra-pale:  #FDF1EB;
-  --wood:        #8B6347;
+  --terra-pale: #FDF1EB;
+  --wood: #8B6347;
 
   /* Neutrals */
-  --ink:         #1C2016;          /* near-black, warm */
-  --ink-mid:     #4A5240;
-  --ink-muted:   #7A8270;
-  --ink-faint:   #B5BAA8;
-  --border:      rgba(45,90,39,0.12);
-  --border-mid:  rgba(45,90,39,0.22);
+  --ink: #1C2016;
+  /* near-black, warm */
+  --ink-mid: #4A5240;
+  --ink-muted: #7A8270;
+  --ink-faint: #B5BAA8;
+  --border: rgba(45, 90, 39, 0.12);
+  --border-mid: rgba(45, 90, 39, 0.22);
 
   /* Accents */
-  --lime:        #6DBF67;          /* bright CTA */
-  --lime-glow:   rgba(109,191,103,0.25);
-  --gold:        #C8973E;
+  --lime: #6DBF67;
+  /* bright CTA */
+  --lime-glow: rgba(109, 191, 103, 0.25);
+  --gold: #C8973E;
 
   /* Shadows */
-  --shadow-sm:   0 2px 12px rgba(45,90,39,0.08);
-  --shadow-md:   0 6px 28px rgba(45,90,39,0.12);
-  --shadow-lg:   0 16px 56px rgba(45,90,39,0.16);
+  --shadow-sm: 0 2px 12px rgba(45, 90, 39, 0.08);
+  --shadow-md: 0 6px 28px rgba(45, 90, 39, 0.12);
+  --shadow-lg: 0 16px 56px rgba(45, 90, 39, 0.16);
 
   /* Radii */
-  --r-sm:  10px;
-  --r-md:  14px;
-  --r-lg:  20px;
-  --r-xl:  28px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
 }
 
+/* ══════════════════════════════════════════════
+   DARK MODE — Midnight Green + Neon Mint
+══════════════════════════════════════════════ */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:          #0E1410;
-    --bg-card:     #141C12;
-    --bg-soft:     #1A2419;
-    --bg-inset:    #1F2B1C;
+    --bg: #0E1410;
+    --bg-card: #141C12;
+    --bg-soft: #1A2419;
+    --bg-inset: #1F2B1C;
 
-    --green-deep:  #4ADE80;
-    --green-mid:   #36C46C;
-    --green-sage:  #6EE7A0;
+    --green-deep: #4ADE80;
+    --green-mid: #36C46C;
+    --green-sage: #6EE7A0;
     --green-light: #A7F3BE;
-    --green-pale:  rgba(74,222,128,0.08);
+    --green-pale: rgba(74, 222, 128, 0.08);
 
-    --terra:       #E58A6A;
+    --terra: #E58A6A;
     --terra-light: #7A3520;
-    --terra-pale:  rgba(229,138,106,0.08);
-    --wood:        #B8845A;
+    --terra-pale: rgba(229, 138, 106, 0.08);
+    --wood: #B8845A;
 
-    --ink:         #EEF5EA;
-    --ink-mid:     #C4D0BC;
-    --ink-muted:   #8FAB88;
-    --ink-faint:   #4A6044;
-    --border:      rgba(74,222,128,0.12);
-    --border-mid:  rgba(74,222,128,0.22);
+    --ink: #EEF5EA;
+    --ink-mid: #C4D0BC;
+    --ink-muted: #8FAB88;
+    --ink-faint: #4A6044;
+    --border: rgba(74, 222, 128, 0.12);
+    --border-mid: rgba(74, 222, 128, 0.22);
 
-    --lime:        #39FF8F;
-    --lime-glow:   rgba(57,255,143,0.2);
-    --gold:        #F0C060;
+    --lime: #39FF8F;
+    --lime-glow: rgba(57, 255, 143, 0.2);
+    --gold: #F0C060;
 
-    --shadow-sm:   0 2px 12px rgba(0,0,0,0.4);
-    --shadow-md:   0 6px 28px rgba(0,0,0,0.5);
-    --shadow-lg:   0 16px 56px rgba(0,0,0,0.6);
+    --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 6px 28px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 16px 56px rgba(0, 0, 0, 0.6);
+
+    --bg-card: #141C12;
   }
 }
 
 /* ══════════════════════════════════════════════
    BASE
-   ══════════════════════════════════════════════ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+══════════════════════════════════════════════ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--bg);
@@ -99,14 +120,40 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.font-display  { font-family: 'Playfair Display', Georgia, serif; }
-.font-body     { font-family: 'Montserrat', system-ui, sans-serif; }
+/* ── Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
 
+::-webkit-scrollbar-track {
+  background: var(--bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green-sage);
+  border-radius: 3px;
+}
+
+/* ══════════════════════════════════════════════
+   TYPOGRAPHY
+══════════════════════════════════════════════ */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Montserrat', system-ui, sans-serif;
+}
+
+/* ══════════════════════════════════════════════
+   LAYOUT CONTAINERS
+══════════════════════════════════════════════ */
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
 .container-sm {
   max-width: 800px;
   margin: 0 auto;
@@ -114,28 +161,123 @@ body {
 }
 
 /* ══════════════════════════════════════════════
+   GLASS CARD
+══════════════════════════════════════════════ */
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass {
+    background: rgba(20, 28, 18, 0.75);
+  }
+}
+
+.glass-frosted {
+  background: rgba(249, 249, 247, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(109, 191, 103, 0.35);
+  border-radius: var(--r-xl);
+  box-shadow: 0 8px 40px rgba(45, 90, 39, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glass-frosted {
+    background: rgba(14, 20, 16, 0.65);
+    border-color: rgba(57, 255, 143, 0.25);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(74, 222, 128, 0.1);
+  }
+}
+
+/* ══════════════════════════════════════════════
+   CARDS & SURFACES
+══════════════════════════════════════════════ */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-inset {
+  background: var(--bg-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+}
+
+/* ══════════════════════════════════════════════
+   PLANT CARD (Home Grid)
+══════════════════════════════════════════════ */
+.plant-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.plant-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ══════════════════════════════════════════════
    BUTTONS
-   ══════════════════════════════════════════════ */
+══════════════════════════════════════════════ */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   background: var(--green-deep);
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(45, 90, 39, 0.3);
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--green-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(45, 90, 39, 0.4);
+}
+
+.btn-sage {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--lime);
+  color: var(--ink);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   padding: 12px 24px;
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(45,90,39,0.3);
+  box-shadow: 0 4px 20px var(--lime-glow);
   transition: all 0.25s ease;
   text-decoration: none;
 }
-.btn-primary:hover {
-  background: var(--green-mid);
+
+.btn-sage:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(45,90,39,0.4);
+  box-shadow: 0 8px 30px var(--lime-glow);
 }
 
 .btn-outline {
@@ -144,6 +286,7 @@ body {
   gap: 8px;
   background: transparent;
   color: var(--green-deep);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   padding: 11px 22px;
@@ -153,77 +296,470 @@ body {
   transition: all 0.25s ease;
   text-decoration: none;
 }
+
 .btn-outline:hover {
   background: var(--green-pale);
   transform: translateY(-2px);
 }
 
 /* ══════════════════════════════════════════════
-   MOBILE RESPONSIVENESS (TIER 1 POLISH)
+   BADGES
+══════════════════════════════════════════════ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.badge-green {
+  background: var(--green-pale);
+  color: var(--green-deep);
+  border: 1px solid rgba(45, 90, 39, 0.2);
+}
+
+.badge-terra {
+  background: var(--terra-pale);
+  color: var(--terra);
+  border: 1px solid rgba(196, 113, 74, 0.25);
+}
+
+.badge-gold {
+  background: rgba(200, 151, 62, 0.1);
+  color: var(--gold);
+  border: 1px solid rgba(200, 151, 62, 0.25);
+}
+
+.badge-sage {
+  background: rgba(109, 191, 103, 0.12);
+  color: var(--green-mid);
+  border: 1px solid rgba(109, 191, 103, 0.3);
+}
+
+/* ══════════════════════════════════════════════
+   TIMELINE
+══════════════════════════════════════════════ */
+.timeline-wrap {
+  position: relative;
+  padding-left: 48px;
+}
+
+.timeline-spine {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--green-sage), var(--terra-light), transparent);
+  border-radius: 2px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 2.5px solid var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ══════════════════════════════════════════════
+   CARE ICONS GRID
+══════════════════════════════════════════════ */
+.care-item {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 18px;
+  transition: all 0.25s ease;
+}
+
+.care-item:hover {
+  background: var(--green-pale);
+  border-color: var(--border-mid);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ══════════════════════════════════════════════
+   STAT CARD
+══════════════════════════════════════════════ */
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--border-mid);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+/* ══════════════════════════════════════════════
+   SECTION DIVIDER
+══════════════════════════════════════════════ */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-mid);
+}
+
+/* ══════════════════════════════════════════════
+   NAV BAR
+══════════════════════════════════════════════ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 68px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(249, 249, 247, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background: rgba(14, 20, 16, 0.88);
+  }
+}
+
+/* ══════════════════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════════════════ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(-1deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes leafGrow {
+  0% {
+    transform: scale(0.7) rotate(-10deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.08) rotate(2deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmerText {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes spinLeaf {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--lime-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+}
+
+@keyframes transferMove {
+  0% {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+@keyframes arrowBounce {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Utility classes */
+.anim-fadeUp {
+  animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.anim-fadeIn {
+  animation: fadeIn 0.5s ease both;
+}
+
+.anim-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.anim-leafGrow {
+  animation: leafGrow 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.anim-glowPulse {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+/* Stagger helpers */
+.delay-1 {
+  animation-delay: 0.08s;
+}
+
+.delay-2 {
+  animation-delay: 0.16s;
+}
+
+.delay-3 {
+  animation-delay: 0.24s;
+}
+
+.delay-4 {
+  animation-delay: 0.32s;
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE RESPONSIVENESS (SUPER FIX)
    ══════════════════════════════════════════════ */
 @media (max-width: 1024px) {
-  .admin-main { margin-left: 0 !important; padding: 16px !important; }
-  .admin-sidebar { 
-    transform: translateX(-100%); 
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+  .admin-main {
+    margin-left: 0 !important;
+    padding: 24px !important;
+  }
+
+  .admin-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     width: 280px !important;
   }
-  .admin-sidebar.open { transform: translateX(0); }
-  .admin-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
-  .show-mobile-flex { display: flex !important; }
-  .show-mobile-block { display: block !important; }
-  .hide-mobile { display: none !important; }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .admin-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .show-mobile-flex {
+    display: flex !important;
+  }
+
+  .show-mobile-block {
+    display: block !important;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
-  /* Tighter spacing for mobile */
-  section { padding: 40px 0 !important; }
-  .container { padding: 0 16px !important; }
-  
-  .hero-padding { padding: 60px 0 30px !important; }
-  .hero-title { font-size: 32px !important; line-height: 1.2 !important; letter-spacing: -0.5px !important; }
-  
-  .mobile-stack { flex-direction: column !important; gap: 12px !important; }
-  .mobile-grid-1 { grid-template-columns: 1fr !important; gap: 20px !important; }
-  
-  .plant-hero-title { font-size: 28px !important; letter-spacing: -1px !important; line-height: 1.1 !important; }
-  .plant-sidebar { margin-top: 24px !important; }
-
-  /* Feature cards */
-  .feature-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
-  
-  /* Tables */
-  .responsive-table { 
-    display: block; 
-    width: 100%;
-    overflow-x: auto; 
-    white-space: nowrap; 
-    -webkit-overflow-scrolling: touch;
-    border-radius: 12px;
+  .hero-padding {
+    padding: 80px 0 40px !important;
   }
 
-  .gap-mobile-sm { gap: 12px !important; }
+  .hero-title {
+    font-size: 38px !important;
+    line-height: 1.1 !important;
+  }
+
+  .mobile-stack {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .mobile-grid-1 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Feature cards stacking */
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables on mobile */
+  .responsive-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* General padding adjustments */
+  section {
+    padding: 60px 0 !important;
+  }
+
+  .container {
+    padding: 0 20px !important;
+  }
+
+  /* Plant Page Header */
+  .plant-hero-title {
+    font-size: 38px !important;
+  }
+
+  .plant-sidebar {
+    margin-top: 40px !important;
+  }
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 28px !important; }
-  .btn-primary, .btn-outline { width: 100%; justify-content: center; padding: 14px 20px !important; }
-  .admin-header { flex-direction: column; align-items: flex-start !important; gap: 12px; }
-  .search-input { width: 100% !important; }
+  .hero-title {
+    font-size: 34px !important;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 20px;
+  }
+
+  .search-input {
+    width: 100% !important;
+  }
 }
 
-/* ── Custom Animations ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.anim-fadeUp { animation: fadeUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
-
+/* ── Custom Animations for Mobile ── */
 .mobile-drawer-overlay {
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(15,23,42,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(4px);
-  z-index: 90;
+  z-index: 9;
 }
 
 /* ─ Shimmer text gradient */
@@ -235,14 +771,41 @@ body {
   background-clip: text;
   animation: shimmerText 4s linear infinite;
 }
-@keyframes shimmerText {
-  0%   { background-position: 0% center; }
-  100% { background-position: 200% center; }
+
+.anim-pulseGlow {
+  animation: pulse-glow 2s infinite;
 }
 
-/* ─ Leaf Grow */
-@keyframes leafGrow {
-  0%   { transform: scale(0.9); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
+.anim-gatewayIn {
+  animation: gatewayFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
-.anim-leafGrow { animation: leafGrow 0.8s ease-out both; }
+
+.anim-leafGrow {
+  animation: leafGrow 0.8s ease-out both;
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE / DESKTOP PLANT PAGE TOGGLE
+   Mobile ≤768px → show mobile-plant-view, hide desktop-plant-view
+   Desktop >768px → show desktop-plant-view, hide mobile-plant-view
+══════════════════════════════════════════════ */
+
+/* Default: desktop — mobile hidden, desktop visible */
+div.mobile-plant-view {
+  display: none !important;
+}
+
+div.desktop-plant-view {
+  display: block !important;
+}
+
+/* Mobile override */
+@media screen and (max-width: 768px) {
+  div.mobile-plant-view {
+    display: block !important;
+  }
+
+  div.desktop-plant-view {
+    display: none !important;
+  }
+}

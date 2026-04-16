@@ -133,7 +133,7 @@ export default function PlantGateway({ plant, children }) {
         {/* Specimen Preview Mini Info */}
         <div style={previewBox}>
           <div style={previewImage}>
-             {plant.image ? <img src={plant.image} style={imgStyle} /> : <span>🪴</span>}
+            {plant.image ? <img src={plant.image} style={imgStyle} /> : <span>🪴</span>}
           </div>
           <div style={previewInfo}>
             <div style={previewLabel}>SPECIMEN DETECTED</div>

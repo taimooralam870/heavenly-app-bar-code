@@ -23,7 +23,7 @@ const unpackPlant = (p) => {
       unpacked.nickname = data.nickname;
       unpacked.gallery = data.gallery || [];
       unpacked.owner_image = data.owner_image;
-    } 
+    }
   } catch (e) { }
   return unpacked;
 };
@@ -31,7 +31,7 @@ const unpackPlant = (p) => {
 const mapPlant = (p) => {
   const up = unpackPlant(p);
   if (!up) return null;
-  
+
   const baseTimeline = [
     { date: new Date(up.created_at).toLocaleDateString('en-AE'), event: "Record Created", type: "acquired", detail: "Added to secure digital registry." }
   ];
@@ -105,4 +105,4 @@ export const getPlantById = cache(async (id) => {
     if (error || !data) return null;
     return mapPlant(data);
   } catch (e) { return null; }
-});
+}); 
