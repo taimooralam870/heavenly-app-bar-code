@@ -1,6 +1,6 @@
 "use client";
 
-import { Camera, Bell } from "lucide-react";
+import { Camera, Bell, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 export default function TopActions({ plantId }) {
@@ -35,10 +35,10 @@ export default function TopActions({ plantId }) {
     <div className="mobile-stack" style={{ display: "flex", gap: "16px" }}>
       <button
         className="btn-primary"
-        style={{ padding: "16px 32px", borderRadius: "100px", fontSize: "14px" }}
-        onClick={() => alert("Reminder synced with your calendar!")}
+        style={{ padding: "16px 32px", borderRadius: "100px", fontSize: "14px", display: "flex", alignItems: "center", gap: "8px" }}
+        onClick={() => window.dispatchEvent(new CustomEvent('open-plant-chat'))}
       >
-        <Bell size={18} /> Remind Me to Water
+        <MessageCircle size={18} /> Talk with Me
       </button>
 
       <div style={{ position: 'relative' }}>

@@ -5,6 +5,7 @@ import PlantActions from "./PlantActions";
 import PlantGateway from "./PlantGateway";
 import TopActions from "./TopActions";
 import MobilePlantLayout from "./MobilePlantLayout";
+import PlantChatWidget from "./PlantChatWidget";
 import {
    ArrowLeft, Calendar, User, Thermometer, Droplets,
    MapPin, Leaf, Clock, Star, Maximize, Lock,
@@ -57,8 +58,8 @@ export default async function PlantPage({ params }) {
    const BRAND_DEEP = "#1e293b"; // Slate-900 for high professionalism
    const BRAND_ACCENT = "#10b981"; // Emerald
    const BRAND_MUTED = "#64748b";
-
-   return (
+    return (
+      <>
       <PlantGateway plant={plant}>
          <style dangerouslySetInnerHTML={{__html: `
             #mobile-plant-view { display: none !important; }
@@ -75,8 +76,6 @@ export default async function PlantPage({ params }) {
          {/* ── DESKTOP LAYOUT (hidden on mobile) ── */}
          <div id="desktop-plant-view" className="desktop-plant-view">
          <div style={{ minHeight: "100vh", background: "#f8fafc", color: BRAND_DEEP }}>
-
-            {/* ── STICKY NAV ── */}
             <nav style={navStyle}>
                <div className="container" style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <Link href="/" style={{ textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", gap: "10px" }}>
@@ -308,7 +307,9 @@ export default async function PlantPage({ params }) {
 
          </div>
          </div>{/* end desktop-plant-view */}
-      </PlantGateway>
+          <PlantChatWidget plant={plant} />
+       </PlantGateway>
+    </>
    );
 }
 

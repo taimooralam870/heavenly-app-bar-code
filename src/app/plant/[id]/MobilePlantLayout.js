@@ -33,12 +33,33 @@ export default function MobilePlantLayout({ plant, currentTemp, sunString }) {
       </div>
 
       {/* ── PLANT IDENTITY ── */}
-      <div style={{ textAlign: "center", padding: "20px 20px 4px" }}>
-        <h1 style={{ fontSize: "22px", fontWeight: 900, color: "#1a1a1a", margin: 0, lineHeight: 1.2 }}>{plant.name}</h1>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", marginTop: "6px" }}>
-          <span style={{ color: "#c4714a", fontSize: "18px" }}>♥</span>
+      <div style={{ textAlign: "center", padding: "20px 20px 10px" }}>
+        <h1 style={{ fontSize: "24px", fontWeight: 900, color: "#1a1a1a", margin: 0, lineHeight: 1.2 }}>{plant.name}</h1>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", marginTop: "6px", marginBottom: "16px" }}>
+          <span style={{ color: "#10b981", fontSize: "18px" }}>♥</span>
           <span style={{ fontSize: "14px", color: "#7a8270", fontWeight: 500 }}>{plant.nickname || plant.species}</span>
         </div>
+        
+        {/* New Interactive Chat Button */}
+        <button 
+          onClick={() => window.dispatchEvent(new CustomEvent('open-plant-chat'))}
+          style={{
+            background: "#10b981",
+            color: "#fff",
+            border: "none",
+            borderRadius: "100px",
+            padding: "12px 24px",
+            fontSize: "14px",
+            fontWeight: 800,
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "8px",
+            boxShadow: "0 4px 15px rgba(16, 185, 129, 0.2)",
+            cursor: "pointer"
+          }}
+        >
+          <Leaf size={16} /> Talk with Me
+        </button>
       </div>
 
       {/* ── PLANT DETAILS CARD ── */}
