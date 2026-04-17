@@ -45,7 +45,7 @@ export async function POST(req) {
     const systemPrompt = generatePlantPrompt(plantInfo);
 
     const response = await generateText({
-      model: groq('llama3-70b-8192'),
+      model: groq('llama-3.3-70b-versatile'),
       messages: validatedMessages,
       system: systemPrompt,
     });
